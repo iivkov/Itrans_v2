@@ -19,11 +19,60 @@
                 <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             </div>
 
+            <!-- Surname -->
+            <div>
+                <x-label for="surname" :value="__('Surname')" />
+
+                <x-input id="surname" class="block mt-1 w-full" type="text" name="surname" :value="old('surname')" required autofocus />
+            </div>
+
+            <!-- VAT / OIB -->
+            <div>
+                <x-label for="vat" :value="__('VAT')" />
+
+                <x-input id="vat" class="block mt-1 w-full" type="text" name="vat" :value="old('vat')" required autofocus />
+            </div>
+
             <!-- Email Address -->
             <div class="mt-4">
                 <x-label for="email" :value="__('Email')" />
 
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+            </div>
+
+            <!-- Telephone -->
+            <div class="mt-4">
+                <x-label for="telephone" :value="__('Telephone')" />
+
+                <x-input id="telephone" class="block mt-1 w-full" type="tel" name="telephone" :value="old('telephone')" required autofocus />
+            </div>
+
+            <!-- Address -->
+            <div>
+                <x-label for="address" :value="__('Address')" />
+
+                <x-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address')" required autofocus />
+            </div>
+
+            <!-- Postal code -->
+            <div>
+                <x-label for="postal_code" :value="__('Postal code')" />
+
+                <x-input id="postal_code" class="block mt-1 w-full" type="text" name="postal_code" :value="old('postal_code')" required autofocus />
+            </div>
+
+            <!-- Town -->
+            <div>
+                <x-label for="town" :value="__('Town')" />
+
+                <x-input id="town" class="block mt-1 w-full" type="text" name="town" :value="old('town')" required autofocus />
+            </div>
+
+            <!-- Country -->
+            <div>
+                <x-label for="country" :value="__('Country')" />
+
+                <x-input id="country" class="block mt-1 w-full" type="text" name="country" :value="old('country')" required autofocus />
             </div>
 
             <!-- Password -->
