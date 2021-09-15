@@ -42,8 +42,8 @@
             <td>{{ $vehicle->capacity }}</td>
             <td>
                 <form action="{{ route('vehicles.destroy', $vehicle->id) }}" method="POST">
-   
-                    <a class="btn btn-info" href="{{ route('vehicles.show', $vehicle->id) }}">Prikaži</a>
+
+                    <a class="btn btn-info" href="{{ route('vehicles.show', $vehicle->id) }}">Naruči</a>
     
                     <a class="btn btn-primary" href="{{ route('vehicles.edit', $vehicle->id) }}">Uredi</a>
    
