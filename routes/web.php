@@ -23,5 +23,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::resource('vehicles', VehicleController::class);
+Route::resource('orders', 'App\Http\Controllers\OrderController');
 
 require __DIR__.'/auth.php';

@@ -69,12 +69,6 @@
                 <input type="number" name="capacity" class="form-control" placeholder="Unesite nosivost (u tonama)">
             </div>
         </div>
-        <!-- <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Set-up:</strong>
-                <textarea class="form-control" style="height:150px" name="set_up" placeholder="Set-up"></textarea>
-            </div>
-        </div> -->
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Spremi</button>
         </div>
