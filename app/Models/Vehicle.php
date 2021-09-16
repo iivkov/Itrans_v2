@@ -18,4 +18,9 @@ class Vehicle extends Model
         'height',
         'capacity',
     ];
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
 }

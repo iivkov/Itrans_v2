@@ -15,5 +15,18 @@ class Order extends Model
         'arrival_date',
         'arrival_location',
         'order_info',
+        'vehicle_id',
+        'user_id',
     ];
+
+    public function vehicle()
+    {
+        return $this->belongsTo(Vehicle::class);
+    }
+
+    public function user()
+    {
+        $user_id = Auth::user()->getId();
+        return $this->belongsTo(User::class);
+    }
 }

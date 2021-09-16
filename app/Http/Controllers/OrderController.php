@@ -31,8 +31,9 @@ class OrderController extends Controller
             'arrival_date' => 'required',
             'arrival_location' => 'required',
             'order_info' => 'required',
+            // 'vehicle_id' => 'required',
         ]);
-    
+
         Order::create($request->all());
      
         return redirect()->route('vehicles.index')->with('success', 'Vehicle ordered successfully!');
